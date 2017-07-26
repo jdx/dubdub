@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const cwd = process.cwd()
+
+for (let arg of process.argv.slice(2)) {
+  require(path.join(cwd, arg))
+}
