@@ -1,19 +1,19 @@
 {
   "name": "dubdub",
   "version": "1.0.1",
-  "main": "lib/dubdub.js",
-  "license": "ISC",
   "bin": "bin/run",
-  "files": [
-    "lib/dubdub.js"
-  ],
-  "scripts": {
-    "test": "standard && ./bin/run test"
+  "dependencies": {
+    "chalk": "^2.0.1"
   },
   "devDependencies": {
     "standard": "^10.0.2"
   },
-  "dependencies": {
-    "chalk": "^2.0.1"
+  "files": [
+    "lib/dubdub.js"
+  ],
+  "license": "ISC",
+  "main": "lib/dubdub.js",
+  "scripts": {
+    "test": "standard && ./bin/run test"
   }
 }
