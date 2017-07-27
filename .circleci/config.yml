@@ -14,4 +14,4 @@ jobs:
           paths:
             - ./node_modules
       - run: yarn test
-      - run: yarn run semantic-release
+      - run: yarn run semantic-release || true
