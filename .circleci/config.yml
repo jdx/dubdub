@@ -13,4 +13,4 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
-      - run: yarn test -- --coverage && bash <(curl -s https://codecov.io/bash) -s coverage
+      - run: yarn test
