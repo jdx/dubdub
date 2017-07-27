@@ -1,22 +1,14 @@
 {
   "name": "dubdub",
-  "version": "0.0.0-development",
+  "version": "2.0.0",
   "bin": "bin/run",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "chalk": "^2.0.1"
   },
   "devDependencies": {
-    "condition-circle": "^1.5.0",
-    "cz-conventional-changelog": "^2.0.0",
-    "husky": "^0.14.3",
     "semantic-release": "^6.3.6",
     "standard": "^10.0.2",
-    "validate-commit-msg": "^2.13.1"
+    "standard-version": "^4.2.0"
   },
   "files": [
     "lib/dubdub.js"
@@ -31,8 +23,7 @@
     "url": "https://github.com/dickeyxxx/dubdub.git"
   },
   "scripts": {
-    "commitmsg": "validate-commit-msg",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "release": "standard-version",
     "test": "standard && ./bin/run test"
   }
 }
