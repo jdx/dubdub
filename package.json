@@ -1,6 +1,6 @@
 {
   "name": "dubdub",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "bin": "bin/run",
   "dependencies": {
     "chalk": "^2.0.1"
